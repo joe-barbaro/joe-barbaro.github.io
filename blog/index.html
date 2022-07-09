@@ -48,6 +48,11 @@ pagination:
     {% assign categories = post.categories | join: "" %}
 
     <li>
+      {% if post.redirect != blank %}
+        <div class="col-sm mt-3 mt-md-0">
+          {% include figure.html path="post.thumbnail" class="img-fluid rounded z-depth-1" %}
+        </div>
+        {% endif %}
       <h3>
         {% if post.redirect == blank %}
           <a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
