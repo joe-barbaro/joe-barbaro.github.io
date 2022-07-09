@@ -51,8 +51,10 @@ pagination:
       <div class="row">
         <div class="column">
           {% if post.redirect != blank %}
+          <div class="row mt-3">
           <div class="col-sm mt-3 mt-md-0">
-            {% include figure.html path="post.thumbnail" class="img-fluid rounded z-depth-1" %}
+            <p><img src= post.thumbnail></p>
+          </div>
           </div>
           {% endif %}
         </div>
