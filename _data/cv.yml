@@ -1,29 +1,23 @@
-- title: General Information
+- title: Joseph Barbaro
   type: map
   contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+    - name: Email
+      value: josephbarbaro9@gmail.com
+    - name: Phone
+      value: 908 907 4242
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: BE, Mechanical Engineering
+      institution: University of Ntore Dame
+      year: 2021
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
+        - Varsity Men's Rowing
+        - Notre Dame Food Share
     - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+      institution: Holmdel High School
+      year: 2017
       description:
         - Description 1.
         - Description 2.
