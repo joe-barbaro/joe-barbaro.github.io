@@ -4,7 +4,7 @@ title: Using Machine Learning to Track Data Center Cooling Efficiency
 date: 2019-08-31 11:12:00-0400
 description: Collected millions of data points from sensors and mechanical system settings in an effort to maximize energy efficiency for a mission-critical data center space.
 tags: formatting math
-thumbnail: /assets/img/data-center.jpg
+thumbnail: "/assets/img/data-center.jpg"
 ---
 This theme supports rendering beautiful math in inline and display modes using [MathJax 3](https://www.mathjax.org/) engine. You just need to surround your math expression with `$$`, like `$$ E = mc^2 $$`. If you leave it inside a paragraph, it will produce an inline expression, just like $$ E = mc^2 $$.
 
