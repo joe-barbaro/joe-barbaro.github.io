@@ -35,6 +35,28 @@ pagination:
   </div>
   {% endif %}
 
+
+
+
+<div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
+            {%- if page.profile.image %}
+              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+
+              {% if page.profile.image_cicular %}
+                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
+              {% else %}
+                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
+              {% endif %}
+
+              {% include figure.html 
+              path=profile_image_path 
+              class=profile_image_class
+              alt=page.profile.image -%}
+            {% endif -%}
+
+          </div>
+
+
   <ul class="post-list">
     {% for post in paginator.posts %}
 
@@ -52,31 +74,13 @@ pagination:
         <div class="column">
           {% if post.thumbnail != blank %}
           <div class="row mt-3">
-
+          <div class="col-sm mt-3 mt-md-0">
+            <p><img src= "assets\img\4.jpg"></p>
+          </div>
           
 
      
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-            {%- if page.profile.image %}
-              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
-
-              {% if page.profile.image_cicular %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
-              {% else %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
-              {% endif %}
-
-              {% include figure.html 
-              path=profile_image_path 
-              class=profile_image_class
-              alt=page.profile.image -%}
-            {% endif -%}
-            {%- if page.profile.address %}
-            <div class="address">
-              {{ page.profile.address }}
-            </div>
-            {%- endif %}
-          </div>
+          
 
 
 
