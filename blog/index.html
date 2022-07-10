@@ -36,8 +36,6 @@ pagination:
 
 
 
-
-
   <ul class="post-list">
     {% for post in paginator.posts %}
 
@@ -61,7 +59,8 @@ pagination:
           </div>
           {% endif %}
         </div>
-        <div class="column">
+        <div class="column", style = "padding-top: 10px;">
+
         <h3>
           {% if post.redirect == blank %}
             <a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
